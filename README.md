@@ -1,6 +1,6 @@
 # 👋 재은's Portfolio
 
-### portfolio site : 
+### portfolio site : [https://JeonJaeeun.github.io/My_Portfolio/](https://jeonjaeeun.github.io/My_Portfolio/)
 ***
 
 ## 🎯 제작 목표
