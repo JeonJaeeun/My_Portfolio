@@ -16,10 +16,6 @@ nav ul{
     list-style-type:none;
     display:flex;
     justify-content: space-around; /*간격 동일*/ 
-    /*
-    margin: 0;
-    padding: 0;
-    */
 }
 
 nav ul li a{
