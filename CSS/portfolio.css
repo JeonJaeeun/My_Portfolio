@@ -1,0 +1,125 @@
+body{
+    font-family: 'Arial', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+header{
+    padding:10px;
+    position:sticky; /*상단 고정*/
+    top:0;
+    z-index:9999;
+    background-color: #D9D9D9;
+}
+
+nav ul{
+    list-style-type:none;
+    display:flex;
+    justify-content: space-around; /*간격 동일*/ 
+    /*
+    margin: 0;
+    padding: 0;
+    */
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 10px 20px; 
+    color: black;
+}
+
+nav ul li a:hover{
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.section{
+    text-align: center;
+    padding:80px 20px;
+}
+
+.section h2{
+    font-size:24px;
+    margin-bottom: 40px;
+}
+
+#home{
+    background-color: #F5F5F5;
+}
+
+#home p{
+    font-size:20px;
+    font-weight: bold;
+    padding:20px;
+    border-radius: 5px;
+}
+
+#about-me{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.about-me-img img{
+    width: 150px ;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.about-me-wrap{
+    display: flex;
+    gap: 30px;
+}
+
+.about-info ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-info ul li {
+    margin: 10px 0;
+}
+
+.hobby-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hobby-icons a img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#project{
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+
+.project-info a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#community{
+    background-color: #D9D9D9;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons a img {
+    width: 40px;
+    height: 40px;
+  }
