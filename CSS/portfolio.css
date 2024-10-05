@@ -1,7 +1,11 @@
 body{
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin:0;
     padding:0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 header{
@@ -10,6 +14,24 @@ header{
     top:0;
     z-index:9999;
     background-color: #D9D9D9;
+}
+
+/* 프로그래스 바 */
+.bar-bg {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #dadada;
+}
+
+.bar-ing {
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
 }
 
 nav ul{
@@ -22,6 +44,7 @@ nav ul li a{
     text-decoration: none;
     padding: 10px 20px; 
     color: black;
+    font-size: 20px;
 }
 
 nav ul li a:hover{
@@ -35,19 +58,33 @@ nav ul li a:hover{
 }
 
 .section h2{
-    font-size:24px;
+    font-size:35px;
     margin-bottom: 40px;
 }
 
 #home{
     background-color: #F5F5F5;
+    min-height: 200px;
 }
 
-#home p{
-    font-size:20px;
-    font-weight: bold;
-    padding:20px;
+.home-text {
+    font-size: 30px;
+    padding: 20px;
     border-radius: 5px;
+    white-space: pre-line; /* 줄바꿈 적용 */
+}
+
+.blink{
+    animation: blink 0.5s infinite;
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+@keyframes blink{
+    to{
+        opacity: 0;
+    }
 }
 
 #about-me{

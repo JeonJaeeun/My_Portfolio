@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <title> 재은's portfolio</title>
         <link rel="stylesheet" href="CSS/portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">    
     </head>
     <body>
         <!--Header-->
@@ -17,18 +20,21 @@
                     <li><a href="#community">Community</a></li>
                 </ul>
             </nav>
+            <!--Progress Bar-->
+            <div class="bar-bg">
+                <span class="bar-ing"></span>
+            </div>
         </header>
-
         <!--Home-->
         <section id="home" class="section">
-            <div class="content">
-                <p>안녕하세요. 개발자 전재은입니다.</p>
+            <div class="home-content">
+                <p class="home-text"></p>
             </div>
         </section>
 
         <!--About Me-->
         <section id="about-me" class="section">
-            <div class="content">
+            <div class="about-me-content">
                 <h2>About Me</h2>
                 <div class="about-me-wrap">
                     <div class="about-me-img">
@@ -54,7 +60,7 @@
         <!--Project-->
 
         <section id="project" class="section">
-            <div class="content">
+            <div class="project-content">
                 <h2>Project</h2>
                 <div class="project-info">
                     <h3>DotheReco</h3>
@@ -68,7 +74,7 @@
 
         <!--Community-->
         <section id="community" class="section">
-            <div class="content">
+            <div class="community-content">
               <h2>Community</h2>
               <div class="icons">
                 <a href="https://github.com/JeonJaeeun"><img src="images/github-icon.png" alt="GitHub"></a>
@@ -77,4 +83,5 @@
             </div>
           </section>
     </body>
+    <script src="JS/portfolio.js"></script>
 </html>
