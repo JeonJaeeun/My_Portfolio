@@ -56,6 +56,14 @@ window.addEventListener('click', function(event){
   }
 });
 
+// 휴대폰용 터치 이벤트 추가
+window.addEventListener('touchstart', function(event){
+  if (event.target == golfModal) {
+    golfModal.style.opacity = '0';
+    golfModal.style.pointerEvents = 'none';
+  }
+});
+
 // 슬라이드 전환 함수
 function showSlide(index) {
   if (index >= slides.length) { currentSlide = 0; } // 마지막 이미지 다음 첫 번째 이미지
