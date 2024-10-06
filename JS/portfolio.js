@@ -1,6 +1,6 @@
 // 1. Home 섹션 타이핑 효과
 
-const content = "Hi, I'm Jaeeun, \n front-end developer.";
+const content = "안녕하세요, \n 개발자 전재은 입니다.";
 const textElement = document.querySelector(".home-text");
 let currentIndex = 0;
 
@@ -11,7 +11,7 @@ function typing(){
         currentIndex = 0;
     }
 }
-setInterval(typing, 200)
+setInterval(typing, 250)
 
 // 2. Progress-Bar
 
@@ -33,6 +33,8 @@ window.addEventListener(
     },
     false
 );
+
+// 3. 골프 모달 창
 
 const golfModal = document.getElementById('golf-modal');
 const golfIcon = document.getElementById('golf-icon');
@@ -67,6 +69,12 @@ function showSlide(index) {
   slides[currentSlide].style.display = 'block';
 }
 
+for(let i = 0; i< slides.length; i++){
+  slides[i].addEventListener('click', function(){
+    showSlide(++currentSlide);
+  })
+}
+/*
 // 드래그 시작
 function startDrag(event) {
   isDragging = true;
@@ -108,3 +116,21 @@ slideContainer.addEventListener('mouseleave', endDrag);
 slideContainer.addEventListener('touchstart', startDrag);
 slideContainer.addEventListener('touchmove', duringDrag);
 slideContainer.addEventListener('touchend', endDrag);
+*/
+
+// 4. 영화 모달 창
+
+const movieModal = document.getElementById('movie-modal');
+const movieIcon = document.getElementById('movie-icon');
+
+movieIcon.addEventListener('click', function(){
+  movieModal.style.opacity='1';
+  movieModal.style.pointerEvents = 'auto';
+})
+
+window.addEventListener('click', function(event){
+  if(event.target == movieModal){
+    movieModal.style.opacity='0';
+    movieModal.style.pointerEvents='none';
+  }
+})

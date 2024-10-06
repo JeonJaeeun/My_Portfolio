@@ -69,7 +69,8 @@ nav ul li a:hover{
 }
 
 .home-text {
-    font-size: 30px;
+    font-size: 26px;
+    font-weight: bold;
     padding: 20px;
     border-radius: 5px;
     white-space: pre-line; /* 줄바꿈 적용 */
@@ -142,7 +143,8 @@ nav ul li a:hover{
     display: block;
 }
 
-.golf-modal{
+/* 모달 창*/
+.golf-modal, .movie-modal{
     position: fixed;
     top: 0;
     left:0;
@@ -157,7 +159,7 @@ nav ul li a:hover{
     transition: opacity 0.3s ease;
 }
 
-.golf-modal-content{
+.golf-modal-content, .movie-modal-content{
     position: relative;
     background-color: white;
     padding: 20px;
@@ -170,6 +172,7 @@ nav ul li a:hover{
 .golf-slide-container img {
     width: 100%;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 golf-slide-container {
@@ -184,6 +187,11 @@ golf-slide-container {
 
 .golf-slide:first-child {
     display: block;
+}
+
+.movie-slide-container iframe{
+    width: 100%;
+    border-radius: 10px;
 }
 
 #project{
