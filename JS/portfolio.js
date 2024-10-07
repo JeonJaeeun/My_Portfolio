@@ -142,3 +142,10 @@ window.addEventListener('click', function(event){
     movieModal.style.pointerEvents='none';
   }
 })
+
+window.addEventListener('touchstart', function(event){
+  if(event.target == movieModal){
+    movieModal.style.opacity = '0';
+    movieModal.style.pointerEvents = 'none';
+  }
+})

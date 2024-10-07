@@ -37,14 +37,15 @@ header{
 nav ul{
     list-style-type:none;
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-around; /*간격 동일*/ 
 }
 
 nav ul li a{
     text-decoration: none;
-    padding: 10px 20px; 
+    padding: 8px 16px; 
     color: black;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 nav ul li a:hover{
